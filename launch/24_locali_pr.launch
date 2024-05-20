@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="24_localization" type="plane_ex" name="plane_ex" output="screen" />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ransac)/rviz/plane_test.rviz">
+    </node>
+
+</launch>
